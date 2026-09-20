@@ -1,0 +1,267 @@
+{
+  "description": "青禾校园数字孪生演示的人工模拟输入，非真实学校、测绘或设备数据",
+  "isSimulated": true,
+  "layout": {
+    "unit": "meter",
+    "coordinateSystem": "Blender: X east, Y north, Z up; origin at campus center",
+    "campusSize": {
+      "eastWest": 300,
+      "northSouth": 220
+    },
+    "gate": {
+      "x": 0,
+      "y": -110
+    },
+    "playground": {
+      "x": 65,
+      "y": -65,
+      "width": 100,
+      "depth": 60
+    },
+    "buildings": [
+      {
+        "buildingId": "T01",
+        "name": "教学楼",
+        "centerGround": {
+          "x": -90,
+          "y": 20,
+          "z": 0
+        },
+        "size": {
+          "width": 50,
+          "depth": 30,
+          "height": 20
+        }
+      },
+      {
+        "buildingId": "L01",
+        "name": "实验楼",
+        "centerGround": {
+          "x": 90,
+          "y": 20,
+          "z": 0
+        },
+        "size": {
+          "width": 48,
+          "depth": 32,
+          "height": 18
+        }
+      },
+      {
+        "buildingId": "LIB01",
+        "name": "图书馆",
+        "centerGround": {
+          "x": 0,
+          "y": 30,
+          "z": 0
+        },
+        "size": {
+          "width": 52,
+          "depth": 32,
+          "height": 22
+        }
+      },
+      {
+        "buildingId": "D01",
+        "name": "宿舍楼",
+        "centerGround": {
+          "x": -85,
+          "y": 75,
+          "z": 0
+        },
+        "size": {
+          "width": 56,
+          "depth": 24,
+          "height": 24
+        }
+      },
+      {
+        "buildingId": "C01",
+        "name": "食堂",
+        "centerGround": {
+          "x": 85,
+          "y": 75,
+          "z": 0
+        },
+        "size": {
+          "width": 44,
+          "depth": 28,
+          "height": 12
+        }
+      },
+      {
+        "buildingId": "G01",
+        "name": "体育馆",
+        "centerGround": {
+          "x": -85,
+          "y": -70,
+          "z": 0
+        },
+        "size": {
+          "width": 54,
+          "depth": 36,
+          "height": 16
+        }
+      }
+    ]
+  },
+  "playback": {
+    "wallClockIntervalSeconds": 5,
+    "simulatedStepMinutes": 5,
+    "stopAtEnd": true
+  },
+  "metricDefinitions": {
+    "powerKw": "当前功率，不是累计用电量",
+    "temperatureC": "单个模拟代表测点温度，不是楼宇平均值",
+    "occupants": "在楼人数"
+  },
+  "alarmRule": {
+    "buildingId": "L01",
+    "metric": "temperatureC",
+    "operator": ">=",
+    "threshold": 32,
+    "note": "仅为界面测试阈值，非实验室安全标准"
+  },
+  "frames": [
+    {
+      "simulatedAt": "2026-09-18T09:00:00+08:00",
+      "buildings": [
+        {
+          "buildingId": "T01",
+          "powerKw": 86,
+          "temperatureC": 26.2,
+          "occupants": 420
+        },
+        {
+          "buildingId": "L01",
+          "powerKw": 120,
+          "temperatureC": 30.8,
+          "occupants": 180
+        },
+        {
+          "buildingId": "LIB01",
+          "powerKw": 72,
+          "temperatureC": 25.4,
+          "occupants": 360
+        },
+        {
+          "buildingId": "D01",
+          "powerKw": 95,
+          "temperatureC": 27.1,
+          "occupants": 260
+        },
+        {
+          "buildingId": "C01",
+          "powerKw": 68,
+          "temperatureC": 28.3,
+          "occupants": 110
+        },
+        {
+          "buildingId": "G01",
+          "powerKw": 36,
+          "temperatureC": 26,
+          "occupants": 80
+        }
+      ]
+    },
+    {
+      "simulatedAt": "2026-09-18T09:05:00+08:00",
+      "buildings": [
+        {
+          "buildingId": "T01",
+          "powerKw": 86,
+          "temperatureC": 26.2,
+          "occupants": 420
+        },
+        {
+          "buildingId": "L01",
+          "powerKw": 135,
+          "temperatureC": 32.4,
+          "occupants": 180
+        },
+        {
+          "buildingId": "LIB01",
+          "powerKw": 72,
+          "temperatureC": 25.4,
+          "occupants": 360
+        },
+        {
+          "buildingId": "D01",
+          "powerKw": 95,
+          "temperatureC": 27.1,
+          "occupants": 260
+        },
+        {
+          "buildingId": "C01",
+          "powerKw": 68,
+          "temperatureC": 28.3,
+          "occupants": 110
+        },
+        {
+          "buildingId": "G01",
+          "powerKw": 36,
+          "temperatureC": 26,
+          "occupants": 80
+        }
+      ]
+    },
+    {
+      "simulatedAt": "2026-09-18T09:10:00+08:00",
+      "buildings": [
+        {
+          "buildingId": "T01",
+          "powerKw": 86,
+          "temperatureC": 26.2,
+          "occupants": 420
+        },
+        {
+          "buildingId": "L01",
+          "powerKw": 90,
+          "temperatureC": 29.6,
+          "occupants": 180
+        },
+        {
+          "buildingId": "LIB01",
+          "powerKw": 72,
+          "temperatureC": 25.4,
+          "occupants": 360
+        },
+        {
+          "buildingId": "D01",
+          "powerKw": 95,
+          "temperatureC": 27.1,
+          "occupants": 260
+        },
+        {
+          "buildingId": "C01",
+          "powerKw": 68,
+          "temperatureC": 28.3,
+          "occupants": 110
+        },
+        {
+          "buildingId": "G01",
+          "powerKw": 36,
+          "temperatureC": 26,
+          "occupants": 80
+        }
+      ]
+    }
+  ],
+  "expectedChecks": {
+    "sumPowerKw": [
+      477,
+      492,
+      447
+    ],
+    "sumOccupants": [
+      1410,
+      1410,
+      1410
+    ],
+    "activeAlarmCount": [
+      0,
+      1,
+      0
+    ]
+  }
+}

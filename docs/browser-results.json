@@ -1,0 +1,22 @@
+{
+  "checkedAt": "2026-09-19T06:52:28.945Z",
+  "url": "http://127.0.0.1:5173",
+  "checks": [
+    "GLB loads into a real WebGL canvas",
+    "students and teachers move through the live campus scene",
+    "all six building list selections update detail data",
+    "search and empty state work",
+    "alert frame drives metrics, labels and alarm list together",
+    "recovery and backward seeking clear active alarms",
+    "power view ranks actual current values",
+    "layer controls hide and restore labels",
+    "top view and 3D label picking work",
+    "snapshot, source JSON, GLB and scene image download",
+    "play advances and stops at the final frame; replay and pause work",
+    "mobile layout has no horizontal overflow and retains interactions",
+    "failed model loading exposes actionable retry and leaves data usable",
+    "WebGL unavailability shows an explanation without breaking data controls",
+    "reduced-motion preference keeps people visible but stationary"
+  ],
+  "errors": []
+}
