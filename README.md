@@ -4,6 +4,9 @@ Vue 3 + Three.js 的完整本地演示项目，包含真实 WebGL 三维模型�
 
 校园和所有运行数值均为虚构。它是可交互数字孪生可视化原型，未连接真实设备，不能用于现实安全判断。本项目由本次开发任务实现，**不是 Seed-2.1-pro 的运行实测记录**。
 
+<img width="1920" height="1108" alt="FireShot Capture 054 - 青禾校园 · 数字孪生 -  localhost" src="https://github.com/user-attachments/assets/d395674f-454a-4ca5-b164-e2ad11fd3856" />
+
+
 ## 直接体验（压缩包已带构建结果）
 
 需要 Node.js 22.12+ 和支持 WebGL 2 的现代浏览器。
@@ -18,6 +21,8 @@ node scripts/serve-dist.mjs
 3. 浏览器访问 **http://127.0.0.1:4173**。保持启动窗口打开，结束时按 Ctrl+C。
 
 此方式不需要先安装 npm 依赖。页面、模型和字体不依赖外部 CDN，页面运行不请求第三方 API。请通过本地服务访问，不要双击 `dist/index.html`。
+<img width="1638" height="906" alt="校园数字孪生02" src="https://github.com/user-attachments/assets/4d8d85fe-a33b-4835-8de4-40a5fca3f6b0" />
+
 
 ## 修改源码与开发
 
